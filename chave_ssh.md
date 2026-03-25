@@ -110,5 +110,4 @@ Hi <seu-usuario>! You've successfully authenticated, but GitHub does not provide
 ```
 git clone git@github.com:SEU_USUARIO/REPOSITORIO.git
 ```
-git clone git@github.com:SEU_USUARIO/REPOSITORIO.git
 
