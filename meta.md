@@ -1,4 +1,5 @@
-`async uploadMedia(phoneNumberId, accessToken, fileBuffer, fileName, contentType) {
+```
+async uploadMedia(phoneNumberId, accessToken, fileBuffer, fileName, contentType) {
         try {
             logger.info(`Iniciando upload do arquivo: ${fileName}`, 'UPLOAD');
             const formData = new FormData();
@@ -7,10 +8,8 @@
                 filename: fileName,
                 contentType: contentType
             });
-
             const uploadRes = await this.withRetry(() =>
-                axios.post(
-                    `https://graph.facebook.com/v19.0/${phoneNumberId}/media`,
+                axios.post(`https://graph.facebook.com/v19.0/${phoneNumberId}/media`,
                     formData,
                     {
                         headers: {
@@ -35,9 +34,6 @@
             throw error;
         }
     }
-
-
-
 
     async sendDocument(phoneNumberId, accessToken, targetNumber, mediaId, fileName) {
         try {
@@ -73,3 +69,5 @@
 
         
     }
+
+```
