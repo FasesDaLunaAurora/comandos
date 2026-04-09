@@ -1,4 +1,4 @@
-async uploadMedia(phoneNumberId, accessToken, fileBuffer, fileName, contentType) {
+`async uploadMedia(phoneNumberId, accessToken, fileBuffer, fileName, contentType) {
         try {
             logger.info(`Iniciando upload do arquivo: ${fileName}`, 'UPLOAD');
             const formData = new FormData();
